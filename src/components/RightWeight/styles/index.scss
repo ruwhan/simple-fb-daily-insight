@@ -1,0 +1,40 @@
+@import "./colors";
+@import "./size";
+@import "./properties";
+@import "./forms";
+
+.disappear {
+  display: none;
+}
+
+.rightweight-button {
+  &.rightweight-button-bare {
+    background-color: transparent;
+    border: none;
+    padding: 4px 8px;
+    font-size: 1rem;
+    color: #52636b;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.bare-input {
+  border: $border-default;
+  border-radius: $border-radius-medium;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-bare {
+  padding: 16px;
+  min-width: 96px;
+  background-color: #fff;
+  border: 1px solid $lightweight-primary;
+  border-radius: $border-radius-medium;
+}

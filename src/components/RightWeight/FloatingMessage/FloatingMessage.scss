@@ -1,0 +1,31 @@
+.rightweight-floating-message {
+  .message-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 16px;
+    padding: 4px 8px;
+    height: 64px;
+    width: 192px;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.66);
+    border-radius: 4px;
+    font-size: 12px;
+    animation: slideBox 0.33s;
+    
+    &.hide {
+      right: -225px;
+      animation: slideBox 0.33s 0s 1 reverse;
+    }
+  }
+
+  @keyframes slideBox {
+    from {
+      right: -225px;
+    }
+    
+    to {
+      right: 0;
+    }
+  }
+}

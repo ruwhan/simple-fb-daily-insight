@@ -1,0 +1,31 @@
+@import "../styles/index.scss";
+
+.rightweight-top-nav-bar {
+  display: flex;
+  height: 48px;
+  align-content: center;
+  padding: 0 8px;
+  background-color: $lightweight-tertiery;
+
+  .top-nav-bar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .right-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    .profile-picture {
+      border-radius: 50%;
+      margin: 8px;
+      width: 32px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}

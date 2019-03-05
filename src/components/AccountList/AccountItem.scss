@@ -1,0 +1,15 @@
+.account-item {
+  display: block;
+
+  &:hover {
+    .amount-spent {
+      display: inline-block;
+    }
+  }
+
+  .amount-spent {
+    display: none;
+    float: right;
+    clear: none;
+  }
+}

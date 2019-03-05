@@ -1,0 +1,49 @@
+.lightweight-sidebar {
+  position: relative;
+  min-height: 100vh;
+  width: 420px;
+  float: left;
+  clear: none;
+  left: 0;
+  transition: left 333ms, width 333ms;
+
+  &+div {
+    margin-left: 420px;
+    transition: margin-left 333ms;
+  }
+
+  &.hidden {
+    left: -420px;
+    width: 0;
+
+    &+div {
+      margin-left: 0;
+    }
+
+    .expand-collapse-button {
+      // left: 0;
+      transform: rotateZ(180deg);  
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 4px 8px;
+    font-size: 1rem;
+    color: #52636b;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .expand-collapse-button {
+    position: absolute;
+    left: 420px;
+    padding: 4px 8px;
+    transform: rotateZ(0deg);
+    transition: transform 0.33s, left 0.33s;
+  }
+}

@@ -1,0 +1,14 @@
+.account-list {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    li.account-list-item {
+      list-style: none;
+      padding: 8px;
+      padding-left: 0;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+  }
+}

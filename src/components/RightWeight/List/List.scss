@@ -1,0 +1,8 @@
+@import "../styles/index.scss";
+
+.lightweight-list {
+  .lightweight-list-item {
+    border-bottom: 1px solid $lightweight-additional;
+    padding: 4px 8px;
+  }
+}

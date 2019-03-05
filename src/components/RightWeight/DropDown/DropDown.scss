@@ -1,0 +1,39 @@
+@import "../styles/index.scss";
+
+.rightweight-dropdown {
+  position: relative;
+  // margin: 16px;
+
+  select {
+    display: none;
+  }
+
+  .dropdown-field {
+    display: block;
+    padding: 8px;
+    border: $border-default;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .dropdown-options {
+    position: absolute;
+    display: block;
+    z-index: 9999;
+    background-color: #fff;
+    width: 100%;
+
+    &>div {
+      padding: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $lightweight-secondary;
+      }
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+}

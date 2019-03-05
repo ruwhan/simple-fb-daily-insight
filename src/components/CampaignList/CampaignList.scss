@@ -1,0 +1,24 @@
+@import "../../styles/index.scss";
+
+.campaign-list {
+  height: 100vh;
+  overflow-y: scroll;
+
+  .lightweight-list {
+    background-color: $lightweight-secondary;
+    color: $lightweight-grey;
+
+    .lightweight-list-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      border-bottom: none;
+      padding: 4px 8px;
+
+      &.selected {
+        background-color: $lightweight-additional;
+      }
+    }
+  }
+}

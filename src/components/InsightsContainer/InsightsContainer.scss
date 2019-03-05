@@ -1,0 +1,33 @@
+@import "../../styles/index.scss";
+
+.insights-container {
+  .basic-metric-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .panels-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .rightweight-panel {
+      display: flex;
+      flex: 1 1 0;
+      min-width: 240px;
+      min-height: 320px;
+    }
+  }
+}
+
+.form-control {
+  margin: 8px 0;
+
+  .rightweight-input {
+    border: 1px solid #ceae7f;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+}
